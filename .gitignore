@@ -1,0 +1,4 @@
+dist
+node_modules
+etc/config.json
+etc/index.html
