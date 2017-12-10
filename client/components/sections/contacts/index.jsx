@@ -17,9 +17,10 @@ export default class Contacts extends Component {
     }
 
     setOpacity() {
-        console.log(document.documentElement.scrollTop);
+        const { scrollTop } = document.documentElement;
+
         this.setState({
-            opacity: this.calcOpacity(document.documentElement.scrollTop)
+            opacity: this.calcOpacity(scrollTop)
         })
     }
 
@@ -27,12 +28,10 @@ export default class Contacts extends Component {
         return scrollTop / 160
     }
 
-
-
     render() {
         const { opacity } = this.state;
         return (
-            <div style={ {opacity} } className='Contacts'>
+            <div style={{ opacity }} className='Contacts'>
                     {
                         contacts.map(contact => {
                             const link = `/static/images/${contact.name}.svg`;
