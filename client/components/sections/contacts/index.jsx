@@ -41,7 +41,6 @@ export default class Contacts extends Component {
                             );
                         })
                     } 
-                <div className='socialCover' />
             </div>
         );
     }
