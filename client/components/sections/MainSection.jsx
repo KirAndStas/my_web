@@ -10,8 +10,8 @@ export default class MainSecion extends Component {
     render() {
         return (
             <div className='MainSection'>
-            	<Overview />	
-            	<Letter />
+            	<Overview id='resume'/>	
+            	<Letter id='motLetter'/>
             	<Contacts />
             </div>
         );

@@ -17,7 +17,15 @@ export default class Parallax extends Component {
         document.addEventListener('scroll', this.parallax.bind(this));
     }
 
+    componentDidMount() {
+        document.removeEventListener('scroll', this.parallax.bind(this));
+    }
+
     parallax() {
+        const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+
+        if (scrollHeight - scrollTop === clientHeight) return;
+
         const newTop = 0 - document.documentElement.scrollTop;
 
         this.setState({ foregroundTop: newTop });

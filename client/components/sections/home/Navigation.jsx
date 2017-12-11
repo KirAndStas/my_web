@@ -9,8 +9,8 @@ export default class Navigation extends Component {
             <div className='Navigation'>
             	<div className='wrap'>
 	                <div>What is here ?</div>
-	                <p>Resume</p>
-	                <p>Mot letter</p>
+	                <p><a href='#resume' >Resume</a></p>
+	                <p><a href='#motLetter' >Mot letter</a></p>
             	</div>
             </div>
         );
