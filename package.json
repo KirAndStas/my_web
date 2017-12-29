@@ -4,7 +4,7 @@
   "description": "Cyril Stas website. Start 01.10.17",
   "main": "index.js",
   "scripts": {
-    "pre": "yarn install && cp etc/config.json.sample etc/config.json && yarn build:ui",
+    "pre": "yarn install && cp etc/config.json.sample etc/config.json &&",
     "dev": "webpack-dev-server --progress --colors --hot --history-api-fallback --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "dev:nodemon": "nodemon --exec babel-node server/index.js",
@@ -20,10 +20,6 @@
     "html-webpack-plugin": "^2.30.1",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
-    "material-ui": "^1.0.0-beta.11",
-    "material-ui-icons": "^1.0.0-beta.10",
-    "mobx": "^3.2.2",
-    "mobx-react": "^4.2.2",
     "path": "^0.12.7",
     "prop-types": "^15.5.10",
     "query-string": "^5.0.0",
@@ -55,7 +51,6 @@
     "eslint-plugin-more": "^0.3.1",
     "eslint-plugin-prefer-spread": "^1.0.3",
     "eslint-plugin-react": "^7.3.0",
-    "mocha": "^3.5.3",
     "nodemon": "^1.12.1"
   }
 }
